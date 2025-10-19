@@ -4,7 +4,7 @@ function Productpro(props){
         alert (`${props.productname} was added to cart!`);
     }
     return(
-        <div className="border  p-4 rounded-lg shadow-md">
+        <div className="border rounded-lg shadow-md">
             <img src={props.productimage} alt={props.productname} className="w-full h-68 object-cover mb-4 rounded"/>
             <h3 className="text-lg font-semibold mb-2">{props.productname}</h3>
             <p className="text-gray-700 mb-4">${props.productprice}</p>
@@ -103,22 +103,20 @@ function Product(){
 const [category, setcategory ] = useState("All")
 
     return(
-      <div>
-        <div>
-            <button onClick={()=> setcategory('All')}>All</button>
-             <button onClick={()=> setcategory('Electronics')}>Electronics</button>
-            <button onClick={()=> setcategory('Fashion')}>Fashion</button>
-            <button onClick={()=> setcategory('Accessories')}>Accessories</button>
+      <div className="max-w-7xl mx-auto px-4 py-8">
+        <div className="mb-8 flex justify-center gap-6">
+            <button className="bg-white px-6 py-2 rounded-lg font-semibold hover:bg-gray-300 shadow border" onClick={()=> setcategory('All')}>All</button>
+             <button className="bg-white px-6 py-2 rounded-lg font-semibold hover:bg-gray-300 shadow border" onClick={()=> setcategory('Electronics')}>Electronics</button>
+            <button className="bg-white px-6 py-2 rounded-lg font-semibold hover:bg-gray-300 shadow border" onClick={()=> setcategory('Fashion')}>Fashion</button>
+            <button className="bg-white px-6 py-2 rounded-lg font-semibold hover:bg-gray-300 shadow border" onClick={()=> setcategory('Accessories')}>Accessories</button>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <div className="">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
             {pro.filter(product=>category ==="All"|| product.category=== category)
             .map(product=>(
                 <Productpro key={product.id} productimage={product.image} productname={product.name} productprice={product.price} />
 
             ))}
-        </div>
-        <div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
             {pro.map(product=>{
                 return <Productpro key={product.id} productimage={product.image} productname={product.name} productprice={product.price} />
             })}
