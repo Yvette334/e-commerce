@@ -1,8 +1,11 @@
 
 function Contact(){
     return(
-        <div className="max-w-4xl mx-auto px-4 py-16">
-            <h1 className="text-3xl font-bold text-center mb-8">Contact Us</h1>
+        <div className="max-w-7xl mx-auto px-4 py-8">
+            <div className="bg-gray-100 p-8 rounded-lg mb-8 text-center">
+          <h1 className="mb-6 text-4xl md:text-5xl font-bold">Contact Us</h1>
+          <p className='text-lg mx-auto mb-8 max-w-2xl'>Have a question or feedback? We'd love to hear from you. Get in touch with our team.</p>
+        </div>
             <div className="mb-12">
                 <h2 className="text-2xl font-bold mb-6">Get in Touch</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

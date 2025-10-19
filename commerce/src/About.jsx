@@ -1,7 +1,11 @@
 
 function About(){
     return(
-        <div className="max-w-4xl mx-auto px-4 py-16">
+        <div className="max-w-7xl mx-auto px-4 py-8">
+            <div className="bg-gray-100 p-8 rounded-lg mb-8 text-center">
+          <h1 className="mb-6 text-4xl md:text-5xl font-bold">About TechStyle Store</h1>
+          <p className='text-lg mx-auto mb-8 max-w-2xl'>Learn more about our mission, values, and what makes us different.</p>
+        </div>
             <h2 className="text-2xl font-bold text-center mb-8">Who we are</h2>
             <div className="space-y-6 text-lg text-gray-700">
         <p >TechStyle Store is your premier destination for cutting-edge technology and contemporary fashion.

@@ -1,16 +1,16 @@
 import{Link} from 'react-router-dom'
 function Footer(){
     return(
-        <footer className="bg-gray-400 bottom-0 ">
+        <footer className="bg-black bottom-0 ">
             <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between">
             <div className="m-4 mb-8 md:mb-0">
-            <h2 className="mb-4 text-2xl font-bold">Tech Store</h2>
+            <h2 className="mb-4 text-2xl font-bold text-gray-300">Tech Store</h2>
             <p className="text-gray-300 max-w-md">Your one-stop shop for the latest tech gadgets and fashion essentials.</p>
             </div>
              <div className='m-4'>
-            <h4 className="mb-4 text-lg font-semibold">Quick Links</h4>
+            <h4 className="mb-4 text-lg font-semibold text-gray-300">Quick Links</h4>
             <ul className="space-y-2 text-gray-300">
-              <li className='hover:text-black'>
+              <li className='hover:text-black '>
                 <Link to="/" className=" hover:text-foreground transition-colors">
                   Home
                 </Link>
@@ -32,8 +32,13 @@ function Footer(){
               </li>
             </ul>
           </div>
+          <div>
+            <h4 className="mb-4 text-lg font-semibold text-gray-300">Contact Us</h4>
+            <p className="text-gray-300">Email:support@techstore.com</p>
+            <p className="text-gray-300">Phone:0787271334</p>
+          </div>
             </div>
-            <p className="text-center">&copy;2025 Tech store.</p>
+            <p className="text-center text-gray-300">&copy;2025 Tech store.</p>
         </footer>
     )
 }

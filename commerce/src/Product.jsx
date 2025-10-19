@@ -104,6 +104,10 @@ const [category, setcategory ] = useState("All")
 
     return(
       <div className="max-w-7xl mx-auto px-4 py-8">
+         <div className="bg-gray-100 p-8 rounded-lg mb-8 text-center">
+          <h1 className="mb-6 text-4xl md:text-5xl font-bold">Our Products</h1>
+          <p className='text-lg mx-auto mb-8 max-w-2xl'>Browse our complete collection of premium tech gadgets, fashion items, and accessories.</p>
+        </div>
         <div className="mb-8 flex justify-center gap-6">
             <button className="bg-white px-6 py-2 rounded-lg font-semibold hover:bg-gray-300 shadow border" onClick={()=> setcategory('All')}>All</button>
              <button className="bg-white px-6 py-2 rounded-lg font-semibold hover:bg-gray-300 shadow border" onClick={()=> setcategory('Electronics')}>Electronics</button>
