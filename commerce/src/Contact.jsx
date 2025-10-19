@@ -10,8 +10,8 @@ function Contact(){
                         <h3 className="text-lg font-semibold mb-4">Contact Details</h3>
                         <div className="space-y-4">
                             <p><strong>Email:</strong> support@techstyle.com</p>
-                            <p><strong>Phone:</strong> (555) 123-4567</p>
-                            <p><strong>Address:</strong> 123 Tech Street, Digital City, DC 12345</p>
+                            <p><strong>Phone:</strong> 0787271334</p>
+                            <p><strong>Address:</strong> KG 11 Ave</p>
                         </div>
                     </div>
                     <div>
@@ -24,7 +24,6 @@ function Contact(){
                     </div>
                 </div>
             </div>
-
             <div className="bg-gray-50 p-8 rounded-lg">
                 <h2 className="text-2xl font-bold mb-6">Send us a Message</h2>
                 <form className="space-y-6">
