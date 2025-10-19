@@ -100,5 +100,13 @@ function Product(){
     image: "https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?w=500&q=80",
   },
 ];
-}
+    return(
+        <div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            {pro.map(product=>{
+                return <Productpro key={product.id} productimage={product.image} productname={product.name} productprice={product.price} />
+            })}
+            </div>
+        </div>
+    )}
 export default Product
