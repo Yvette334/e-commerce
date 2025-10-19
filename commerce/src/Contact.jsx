@@ -12,7 +12,7 @@ function Contact(){
                     <div>
                         <h3 className="text-lg font-semibold mb-4">Contact Details</h3>
                         <div className="space-y-4">
-                            <p><strong>Email:</strong> support@techstyle.com</p>
+                            <p><strong>Email:</strong> support@techstore.com</p>
                             <p><strong>Phone:</strong> 0787271334</p>
                             <p><strong>Address:</strong> KG 11 Ave</p>
                         </div>

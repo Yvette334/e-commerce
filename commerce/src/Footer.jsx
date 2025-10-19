@@ -32,7 +32,7 @@ function Footer(){
               </li>
             </ul>
           </div>
-          <div>
+          <div className='m-4'>
             <h4 className="mb-4 text-lg font-semibold text-gray-300">Contact Us</h4>
             <p className="text-gray-300">Email:support@techstore.com</p>
             <p className="text-gray-300">Phone:0787271334</p>
