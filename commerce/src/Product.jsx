@@ -4,8 +4,8 @@ function Productpro(props){
         alert (`${props.productname} was added to cart!`);
     }
     return(
-        <div className="border p-4 rounded-lg shadow-md">
-            <img src={props.productimage} alt={props.productname} className="w-full h-48 object-cover mb-4 rounded"/>
+        <div className="border  p-4 rounded-lg shadow-md">
+            <img src={props.productimage} alt={props.productname} className="w-full h-68 object-cover mb-4 rounded"/>
             <h3 className="text-lg font-semibold mb-2">{props.productname}</h3>
             <p className="text-gray-700 mb-4">${props.productprice}</p>
             <button onClick={addtocart} className="bg-black w-full text-white px-4 py-2 rounded hover:bg-blue-600">🛒Add to Cart</button>
@@ -100,13 +100,30 @@ function Product(){
     image: "https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?w=500&q=80",
   },
 ];
+const [category, setcategory ] = useState("All")
+
     return(
+      <div>
+        <div>
+            <button onClick={()=> setcategory('All')}>All</button>
+             <button onClick={()=> setcategory('Electronics')}>Electronics</button>
+            <button onClick={()=> setcategory('Fashion')}>Fashion</button>
+            <button onClick={()=> setcategory('Accessories')}>Accessories</button>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            {pro.filter(product=>category ==="All"|| product.category=== category)
+            .map(product=>(
+                <Productpro key={product.id} productimage={product.image} productname={product.name} productprice={product.price} />
+
+            ))}
+        </div>
         <div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
             {pro.map(product=>{
                 return <Productpro key={product.id} productimage={product.image} productname={product.name} productprice={product.price} />
             })}
             </div>
+        </div>
         </div>
     )}
 export default Product
