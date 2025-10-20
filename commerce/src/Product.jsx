@@ -121,9 +121,6 @@ const [category, setcategory ] = useState("All")
                 <Productpro key={product.id} productimage={product.image} productname={product.name} productprice={product.price} />
 
             ))}
-            {pro.map(product=>{
-                return <Productpro key={product.id} productimage={product.image} productname={product.name} productprice={product.price} />
-            })}
             </div>
         </div>
         </div>

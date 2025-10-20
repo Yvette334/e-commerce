@@ -59,7 +59,7 @@ function Contact(){
                     
                     <button 
                         type="button"
-                        className="bg-black text-white hover:bg-blue-600 px-6 py-3 rounded-lg font-semibold"
+                        className="bg-black text-white hover:bg-gray-600 px-6 py-3 rounded-lg font-semibold"
                     >
                         Send Message
                     </button>

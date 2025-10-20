@@ -1,4 +1,4 @@
-import Product from './Product.jsx'
+import Products from './products.jsx'
 import{Link} from 'react-router-dom'
 function Home(){
     return(
@@ -13,7 +13,7 @@ function Home(){
       <div className='text-center py-16 mx-auto px-4'>
         <h2 className='font-bold text-3xl mb-4'>Featured Products</h2>
         <p className='mb-4 text-gray-600 max-w-2xl mx-auto'>Check out our handpicked selection of trending items that combine quality, style, and innovation.</p>
-        <Product/>
+        <Products/>
       </div>
       </section>
 )}
